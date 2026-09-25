@@ -1,0 +1,16 @@
+{
+  "name": "ai-film-studio",
+  "version": "1.0.0",
+  "description": "Web app to manage AI-driven film production projects: scripts, scene/shot breakdown, Seedance prompt authoring, continuity & asset tracking.",
+  "main": "server/index.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "node server/index.js"
+  },
+  "dependencies": {
+    "better-sqlite3": "^11.3.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}
