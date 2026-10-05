@@ -2,3 +2,6 @@ node_modules/
 data/
 *.log
 .env
+
+# bản zip đóng gói để kéo thả lên Netlify — tạo lại được từ thư mục 189lab-site/
+189lab-site.zip
