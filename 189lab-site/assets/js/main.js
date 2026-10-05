@@ -262,13 +262,13 @@
       var th = showcaseThumb(sc);
       var media = th ? '<img src="' + esc(th) + '" alt="" loading="lazy" referrerpolicy="no-referrer">' : "<span>" + esc(t("showcase.thumb")) + "</span>";
       var play = v ? '<span class="card-play" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 2l8 5-8 5z"/></svg></span>' : "";
-      var tag = sc.category ? '<span class="card-tag">' + esc(t("tag." + sc.category)) + "</span>" : "";
+      var tag = (sc.category && cats.length >= 2) ? '<span class="card-tag">' + esc(t("tag." + sc.category)) + "</span>" : "";
       var credit = tx(sc.by) ? (t("by.short") ? t("by.short") + " " : "") + tx(sc.by) : "";
       var sub = [tx(sc.note), credit].filter(Boolean).map(esc).join(" · ");
+      var title = tx(sc.title) && !isPh(sc.title) ? '<div class="card-title">' + esc(tx(sc.title)) + "</div>" : "";
       var inner = '<div class="card-media">' + tag + media + play + "</div>" +
-        '<div class="card-meta"><div><div class="card-title">' + esc(tx(sc.title)) + "</div>" +
-        (sub ? '<div class="card-sub">' + sub + "</div>" : "") + "</div></div>";
-      if (v) return '<button class="card" type="button" data-sc="' + idx + '" aria-label="' + esc(t("showcase.play") + ": " + tx(sc.title)) + '">' + inner + "</button>";
+        (title || sub ? '<div class="card-meta"><div>' + title + (sub ? '<div class="card-sub">' + sub + "</div>" : "") + "</div></div>" : "");
+      if (v) return '<button class="card" type="button" data-sc="' + idx + '" aria-label="' + esc(t("showcase.play") + ": " + (title ? tx(sc.title) : "#" + (idx + 1))) + '">' + inner + "</button>";
       return '<div class="card">' + inner + "</div>";
     }).join("");
 
