@@ -4,7 +4,7 @@ window.I18N = {
     "meta.title": "189 LAB — AI Film, Commercials & Creative Technology",
     "meta.desc": "189 LAB is a high-end AI studio from Ho Chi Minh City, crafting films, commercials and intelligent creative systems for brands worldwide.",
     "skip": "Skip to content",
-    "nav.about": "ABOUT", "nav.team": "TEAM", "nav.work": "WORK", "nav.originals": "ORIGINALS", "nav.lab": "LAB", "nav.contact": "CONTACT",
+    "nav.about": "ABOUT", "nav.team": "TEAM", "nav.work": "WORK", "nav.originals": "ORIGINALS", "nav.partners": "PARTNERS", "nav.contact": "CONTACT",
     "nav.menu": "Open menu", "nav.close": "Close menu",
 
     "hero.kicker": "Films and commercials, directed by people, amplified by AI.",
@@ -43,13 +43,6 @@ window.I18N = {
     "work.thumb": "[THUMBNAIL]", "work.empty": "New work in this category is on its way.",
     "work.play": "Play",
 
-    "proc.kicker": "THE LAB · HOW WE WORK", "proc.title": "Director first. Machine second.",
-    "step": "STEP",
-    "p1.t": "Brief & Story", "p1.d": "Objective, audience, dramatic spine.",
-    "p2.t": "Visual Bible", "p2.d": "Look, characters, worlds, reference frames.",
-    "p3.t": "Generate & Direct", "p3.d": "Shot-by-shot direction across AI models.",
-    "p4.t": "Post & Sound", "p4.d": "Edit, grade, VFX, music and mix.",
-    "p5.t": "Deliver", "p5.d": "Masters and cut-downs for every channel.",
 
     "cred.kicker": "RECOGNITION",
     "cred.title": "Built by people the AI film industry already trusts.",
@@ -58,7 +51,7 @@ window.I18N = {
     "team.kicker": "THE TEAM", "team.title": "The minds behind 189 LAB.",
     "team.sub": "Filmmakers, organizers and creative partners of the platforms shaping AI video.",
     "clients.title": "Trusted by", "clients.sub": "The brands and partners we are proud to create with.",
-    "clients.titleFew": "Selected collaborations", "clients.subFew": "A few of the brands we have created with.",
+    "clients.titleFew": "Partners", "clients.subFew": "The platforms and brands we create with.",
 
     "ct.kicker": "CONTACT", "ct.title": "Have a story?<br>Let's make it bigger.",
     "fm.name": "Name", "fm.email": "Email", "fm.company": "Company", "fm.type": "Project type",
@@ -76,7 +69,7 @@ window.I18N = {
     "meta.title": "189 LAB — Phim AI, Quảng cáo AI & Công nghệ sáng tạo",
     "meta.desc": "189 LAB là studio AI cao cấp đến từ TP. Hồ Chí Minh, sáng tạo phim, quảng cáo và hệ thống sáng tạo thông minh cho thương hiệu trên toàn thế giới.",
     "skip": "Bỏ qua tới nội dung",
-    "nav.about": "GIỚI THIỆU", "nav.team": "ĐỘI NGŨ", "nav.work": "DỰ ÁN", "nav.originals": "ORIGINALS", "nav.lab": "LAB", "nav.contact": "LIÊN HỆ",
+    "nav.about": "GIỚI THIỆU", "nav.team": "ĐỘI NGŨ", "nav.work": "DỰ ÁN", "nav.originals": "ORIGINALS", "nav.partners": "ĐỐI TÁC", "nav.contact": "LIÊN HỆ",
     "nav.menu": "Mở menu", "nav.close": "Đóng menu",
 
     "hero.kicker": "Phim và quảng cáo. Con người đạo diễn, AI chắp cánh.",
@@ -115,13 +108,6 @@ window.I18N = {
     "work.thumb": "[ẢNH BÌA]", "work.empty": "Dự án mới ở hạng mục này đang được hoàn thiện.",
     "work.play": "Phát",
 
-    "proc.kicker": "THE LAB · QUY TRÌNH", "proc.title": "Đạo diễn trước. Máy móc sau.",
-    "step": "BƯỚC",
-    "p1.t": "Brief & câu chuyện", "p1.d": "Mục tiêu, khán giả, xương sống kịch.",
-    "p2.t": "Visual Bible", "p2.d": "Phong cách, nhân vật, thế giới, khung tham chiếu.",
-    "p3.t": "Gen & đạo diễn", "p3.d": "Chỉ đạo từng shot trên nhiều mô hình AI.",
-    "p4.t": "Hậu kỳ & âm thanh", "p4.d": "Dựng, chỉnh màu, VFX, nhạc và mix.",
-    "p5.t": "Bàn giao", "p5.d": "Bản master và các bản cắt cho mọi kênh.",
 
     "cred.kicker": "THÀNH TÍCH",
     "cred.title": "Đội ngũ đã được ngành phim AI tin tưởng.",
@@ -130,7 +116,7 @@ window.I18N = {
     "team.kicker": "ĐỘI NGŨ", "team.title": "Những khối óc đứng sau 189 LAB.",
     "team.sub": "Nhà làm phim, người tổ chức cuộc thi và đối tác sáng tạo của các nền tảng video AI hàng đầu.",
     "clients.title": "Được tin tưởng bởi", "clients.sub": "Những thương hiệu và đối tác chúng tôi tự hào đồng hành.",
-    "clients.titleFew": "Đã đồng hành cùng", "clients.subFew": "Một số thương hiệu chúng tôi đã cùng sáng tạo.",
+    "clients.titleFew": "Đối tác", "clients.subFew": "Các nền tảng và thương hiệu chúng tôi đồng hành sáng tạo.",
 
     "ct.kicker": "LIÊN HỆ", "ct.title": "Bạn có một câu chuyện?<br>Hãy kể nó lớn hơn.",
     "fm.name": "Họ tên", "fm.email": "Email", "fm.company": "Công ty", "fm.type": "Loại dự án",

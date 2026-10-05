@@ -192,8 +192,15 @@
     $("#clients-sub").textContent = t(few ? "clients.subFew" : "clients.sub");
     box.className = "logo-grid" + (few ? " few" : "");
     box.innerHTML = cl.map(function (c) {
-      return '<div class="logo">' + (c.logo ? '<img src="' + esc(img(c.logo)) + '" referrerpolicy="no-referrer" alt="' + esc(tx(c.name)) + '" loading="lazy">' : esc(tx(c.name))) + "</div>";
+      var name = '<span class="logo-name">' + esc(tx(c.name)) + "</span>";
+      return '<div class="logo">' + (c.logo ? '<img src="' + esc(img(c.logo)) + '" referrerpolicy="no-referrer" alt="' + esc(tx(c.name)) + '" loading="lazy">' : "") + name + "</div>";
     }).join("");
+    // file logo chưa có / link hỏng → ẩn ảnh, hiện tên đối tác
+    box.querySelectorAll(".logo img").forEach(function (im) {
+      var ok = function () { im.parentNode.classList.add("has-img"); };
+      var bad = function () { im.remove(); };
+      if (im.complete) { im.naturalWidth ? ok() : bad(); } else { im.addEventListener("load", ok); im.addEventListener("error", bad); }
+    });
     var q = S.testimonial || {}, qt = tx(q.quote);
     $("#quote").hidden = !qt;
     if (qt) {

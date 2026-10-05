@@ -173,6 +173,8 @@ h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,2.8vw,40px);l
 .logo{height:80px;border:1px solid #1E1E21;display:flex;align-items:center;justify-content:center;padding:16px;font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:#6E6E75}
 .logo img{max-height:44px;width:auto;object-fit:contain;filter:grayscale(1) brightness(1.6);opacity:.8;transition:opacity .2s}
 .logo:hover img{opacity:1}
+.logo-name{font-family:var(--display);font-size:clamp(15px,1.3vw,19px);letter-spacing:.02em;color:#A7A7AE;text-align:center;line-height:1.25}
+.logo.has-img .logo-name{display:none}
 
 /* contact */
 .contact{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(48px,6.7vw,96px)}

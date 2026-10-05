@@ -138,7 +138,13 @@ window.SITE = {
   /* ---------- KHÁCH HÀNG ----------
      Chỉ đưa logo khách ĐÃ ĐỒNG Ý công khai. Logo nên là PNG nền trong, màu trắng.
      0 logo: mục tự ẩn · 1–5 logo: 1 hàng lớn "Selected collaborations" · 6+ logo: lưới "Trusted by". */
-  clients: [],
+  clients: [
+    { name: "CapCut",          logo: "assets/img/clients/capcut.png" },
+    { name: "Topview",         logo: "assets/img/clients/topview.png" },
+    { name: "Teammate",        logo: "assets/img/clients/teammate.png" },
+    { name: "Viettel",         logo: "assets/img/clients/viettel.png" },
+    { name: "OMODA & JAECOO",  logo: "assets/img/clients/omoda-jaecoo.png" }
+  ],
 
   /* ---------- LIÊN HỆ ---------- */
   contact: {
