@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>189 LAB — Trình soạn thảo</title>
+<link rel="icon" type="image/png" href="assets/img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/editor.css">
+</head>
+<body>
+<header class="ed-top">
+  <div class="ed-brand">
+    <img src="assets/img/logo-mark.png" alt="" width="30" height="27">
+    <span>189 LAB <b>Trình soạn thảo</b></span>
+  </div>
+  <div class="ed-controls">
+    <div class="seg" role="group" aria-label="Khung xem trước">
+      <button type="button" data-act="device" data-v="desktop" aria-pressed="true">Máy tính</button>
+      <button type="button" data-act="device" data-v="mobile" aria-pressed="false">Điện thoại</button>
+    </div>
+    <div class="seg" role="group" aria-label="Ngôn ngữ xem trước">
+      <button type="button" data-act="lang" data-v="en" aria-pressed="true">EN</button>
+      <button type="button" data-act="lang" data-v="vi" aria-pressed="false">VI</button>
+    </div>
+  </div>
+  <div class="ed-save">
+    <span class="ed-status" id="status" aria-live="polite">Chưa có thay đổi</span>
+    <button type="button" class="b-ghost" data-act="reset">Huỷ thay đổi</button>
+    <button type="button" class="b-solid" data-act="save" id="save-btn" disabled>Lưu thay đổi</button>
+  </div>
+</header>
+
+<div class="ed-banner" id="draft-banner" hidden>
+  <span>Có bản nháp chưa lưu từ lần trước.</span>
+  <button type="button" class="b-solid sm" data-act="draft-restore">Mở lại bản nháp</button>
+  <button type="button" class="b-ghost sm" data-act="draft-discard">Bỏ bản nháp</button>
+</div>
+
+<div class="ed-body">
+  <aside class="ed-panel">
+    <nav class="ed-tabs" id="tabs" aria-label="Mục cần sửa"></nav>
+    <div class="ed-form" id="form"></div>
+  </aside>
+  <main class="ed-preview" id="preview-area">
+    <div class="frame-box" id="frame-box">
+      <iframe id="preview" src="index.html" title="Xem trước website"></iframe>
+    </div>
+  </main>
+</div>
+
+<dialog class="ed-dialog" id="done-dialog">
+  <h2>Đã lưu xong</h2>
+  <div id="done-body"></div>
+  <ol>
+    <li>Trong Finder, mở thư mục <b>Downloads</b>.</li>
+    <li>Kéo file vừa lưu vào <code>189lab-site/assets/js/</code> và chọn <b>Thay thế</b> (Replace).</li>
+    <li>Vào Netlify → site 189 LAB → tab <b>Deploys</b>, kéo thả cả thư mục <code>189lab-site</code> vào ô cuối trang.</li>
+  </ol>
+  <button type="button" class="b-solid" data-act="close-dialog">Đã hiểu</button>
+</dialog>
+
+<script src="assets/js/content.js"></script>
+<script src="assets/js/i18n.js"></script>
+<script src="assets/js/editor.js"></script>
+</body>
+</html>

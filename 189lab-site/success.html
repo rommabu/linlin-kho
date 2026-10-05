@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>189 LAB</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#060606">
+<link rel="icon" type="image/png" href="/assets/img/favicon.png">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500&family=Manrope:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+<main class="status">
+  <img src="/assets/img/logo-mark.png" alt="189 LAB" width="120" height="107">
+  <h1 data-i18n="ok.title"></h1>
+  <p data-i18n="ok.body"></p>
+  <a class="btn btn-line" href="/" data-i18n="ok.back">Back to 189 LAB</a>
+</main>
+<script src="/assets/js/i18n.js"></script>
+<script>
+(function(){var l="en";try{l=localStorage.getItem("189lab-lang")||"en"}catch(e){}if(l!=="vi")l="en";
+document.documentElement.lang=l;var d=window.I18N[l];
+document.querySelectorAll("[data-i18n]").forEach(function(el){var v=d[el.dataset.i18n];if(v)el.textContent=v});
+document.title="189 LAB — "+(d["ok.title"]||"");})();
+</script>
+</body>
+</html>
